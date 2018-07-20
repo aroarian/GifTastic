@@ -41,7 +41,7 @@ $("#search-button").on("click", function(event) {
   
     topics.push(search);
   
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=zmCZ9gyr4a3j3D4LKgskw7ykgskVAfRI&limit=10";
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -84,7 +84,7 @@ function getGifs() {
 
   current.push(topicBtn);
 
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topicBtn + "&api_key=dc6zaTOxFJmzC&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topicBtn + "&api_key=zmCZ9gyr4a3j3D4LKgskw7ykgskVAfRI&limit=10";
 
   $.ajax({
     url: queryURL,
@@ -113,7 +113,7 @@ function moreGifs() {
 
     if (current === undefined || current.length == 0) return;
 
-  var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + current + "&api_key=dc6zaTOxFJmzC&limit=10";
+  var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + current + "&api_key=dzmCZ9gyr4a3j3D4LKgskw7ykgskVAfRI&limit=10";
 
   $.ajax({
     url: queryURL,
