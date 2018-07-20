@@ -8,6 +8,7 @@
     <!--Self CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 
 
@@ -16,35 +17,36 @@
 
 <body>
     <div class="container">
+        <div class="header">
             <h1>Gif Search</h1>
-
-            
-    
-            
             <form id="searchGif">
-                    <label for="search-input"></label>
-                    <input type="text" id="search-input">
-                    <br>
-                                        
-                    <input id="search-button" type="submit" value="Search">
-                    
-                </form>
-                <h1>Topics</h1>
-                <div class="topics"></div>
-            <form id="movie-form">
-                <label for="topic-input">Add a Topic</label>
-                <input type="text" id="topic-input">
+                <label for="search-input"></label>
+                <input type="text" id="search-input">
                 <br>
-    
-                <!-- Button triggers new movie to be added -->
-                <input id="add-topic" type="submit" value="Add a Topic">
-                <input id="more-topic" type="button" value="More Gifs">
-                <input id="clear" type="button" value="Clear Gifs">
+                <input id="search-button" type="submit" value="Search">
             </form>
-            <div id="topic-view"></div>   
-      
-        <div class="gifs"></div>
+        </div>
+
+
+
+
+
+
         
+        <div class="topics"></div>
+        <form id="topic-form">
+            <label for="topic-input">Add a Topic</label>
+            <input type="text" id="topic-input">
+            <br>
+
+            <input id="add-topic" type="submit" value="Add a Topic">
+            <input id="more-topic" type="button" value="More Gifs">
+            <input id="clear" type="button" value="Clear Gifs">
+        </form>
+        <div id="topic-view"></div>
+
+        <div class="gifs"></div>
+
     </div>
 
     <!--JQuery CDN-->

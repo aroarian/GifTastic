@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(65, 82, 69);
+    color: rgb(107, 114, 110);
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    padding: 20px;
+    height: 100px;
+    background-color: rgb(54, 68, 57);
+    margin-bottom: 20px;
+}
+.gifDiv{
+    width:auto;
+    background: linear-gradient(rgb(65, 82, 69), rgb(54, 68, 57));
+    height: 300px;
+    border: 1px solid rgb(72, 92, 78);
+    margin: 10px 10px 10px 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.gifDiv p {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 75%;
+}
+
+.topics{
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: auto;
+}
+
+.topics button{
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(54, 68, 57);
+    outline: none;
+}
+
+.topics button:hover{
+    
+}
+
+#topic-form{
+    margin-bottom: 20px;
+}

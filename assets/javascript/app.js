@@ -49,7 +49,7 @@ $("#search-button").on("click", function(event) {
         console.log(response);
         console.log(ratingPG);
         for (var i = 0; i < results.length; i++) {
-          var topicDiv = $("<div>");
+          var topicDiv = $("<div class='gifDiv'></div>");
     
           var p = $("<p>").text("Rating: " + results[i].rating);
     
@@ -109,7 +109,7 @@ function getGifs() {
     var results = response.data;
        
     for (var i = 0; i < results.length; i++) {
-      var topicDiv = $("<div>");
+      var topicDiv = $("<div class='gifDiv'></div>");
 
       var p = $("<p>").text("Rating: " + results[i].rating);
 
@@ -152,7 +152,7 @@ function moreGifs() {
     var results = response.data;
 
     for (var i = 0; i < results.length; i++) {
-      var topicDiv = $("<div>");
+      var topicDiv = $("<div class='gifDiv'></div>");
 
       var p = $("<p>").text("Rating: " + results[i].rating);
 
