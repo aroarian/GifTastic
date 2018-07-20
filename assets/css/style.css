@@ -6,6 +6,16 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+body input{
+    border:none;
+    padding: 5px;
+    background-color:rgb(39, 49, 41);
+    border-radius: 5px;
+    outline: none;
+    color: rgb(107, 114, 110);
+    padding-left: 10px;
+}
+
 .header{
     padding: 20px;
     height: 100px;
@@ -34,6 +44,9 @@ body{
     margin-bottom: 20px;
     margin-left: 15px;
     height: auto;
+    border-bottom: 1px solid rgb(107, 114, 110);
+    padding-bottom: 20px;
+    margin-right: 20px;
 }
 
 .topics button{
@@ -46,12 +59,30 @@ body{
     margin-right: 5px;
     background-color: rgb(54, 68, 57);
     outline: none;
+    
+}
+#topic-form{
+    margin-bottom: 20px;
 }
 
 .topics button:hover{
-    
+    transform: scale(1.25);
+    box-shadow: 0px 2px 0px #00000041;
 }
 
-#topic-form{
-    margin-bottom: 20px;
+.button{
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: rgb(39, 49, 41);
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(107, 114, 110);
+    outline: none;
+}
+
+.button:hover{
+    transform: scale(1.10);
+    box-shadow: 0px 2px 0px #00000041;
 }

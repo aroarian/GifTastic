@@ -85,6 +85,10 @@ $("#search-button").on("click", function(event) {
 $("#add-topic").on("click", function(event) {
   event.preventDefault();
 
+  $topicInput = $("#topic-input").val();
+
+  if ($topicInput === "") return;
+
   var topic = $("#topic-input").val().trim();
 
   topics.push(topic);
