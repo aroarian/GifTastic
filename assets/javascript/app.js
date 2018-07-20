@@ -1,4 +1,4 @@
-var topics = ["cats", "dogs", "funny", "sad"];
+var topics = ["cats", "dogs", "funny", "sad", "music", "beer", "pugs", "tired", "confused", "lost", "hungry", "full"];
 
 var current = [];
 
