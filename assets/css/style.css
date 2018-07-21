@@ -34,6 +34,7 @@ body input {
 }
 .gifDiv {
   width: auto;
+  min-width: 200px;
   background: linear-gradient(rgb(65, 82, 69), rgb(54, 68, 57));
   height: 275px;
   border: 1px solid rgb(72, 92, 78);
@@ -45,13 +46,16 @@ body input {
 
 .gifDiv p {
   color: white;
-  /* margin-bottom: 15px;
-  margin-top: 20px; */
   padding: 20px;
   padding-left: 0px;
   font-size: 75%;
 }
 
+.gify{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .topics {
   margin: 0px 15px 15px 20px;
   height: auto;
