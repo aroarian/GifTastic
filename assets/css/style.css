@@ -1,88 +1,129 @@
-body{
-    background-color: rgb(65, 82, 69);
-    color: rgb(107, 114, 110);
-    font-weight: bold;
-    font-size: 150%;
-    font-family: 'Ubuntu', sans-serif;
+body {
+  background-color: rgb(65, 82, 69);
+  color: rgb(107, 114, 110);
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "Ubuntu", sans-serif;
 }
 
-body input{
-    border:none;
-    padding: 5px;
-    background-color:rgb(39, 49, 41);
-    border-radius: 5px;
-    outline: none;
-    color: rgb(107, 114, 110);
-    padding-left: 10px;
+body h1 {
+  font-size: 250%;
+  color: #fff;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777,
+    0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
+    0px 8px 7px #001135;
+  font-family: "Permanent Marker", cursive;
+  margin-bottom:15px;
 }
 
-.header{
-    padding: 20px;
-    height: 100px;
-    background-color: rgb(54, 68, 57);
-    margin-bottom: 20px;
+body input {
+  border: none;
+  padding: 5px;
+  background-color: rgb(39, 49, 41);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(107, 114, 110);
+  padding-left: 10px;
 }
-.gifDiv{
-    width:auto;
-    background: linear-gradient(rgb(65, 82, 69), rgb(54, 68, 57));
-    height: 300px;
-    border: 1px solid rgb(72, 92, 78);
-    margin: 10px 10px 10px 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline-block;
+
+.header {
+  padding: 20px;
+  height: auto;
+  background-color: rgb(54, 68, 57);
+  margin-bottom: 20px;
+}
+.gifDiv {
+  width: auto;
+  background: linear-gradient(rgb(65, 82, 69), rgb(54, 68, 57));
+  height: 275px;
+  border: 1px solid rgb(72, 92, 78);
+  margin: 10px 10px 10px 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
 }
 
 .gifDiv p {
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    font-size: 75%;
+  color: white;
+  /* margin-bottom: 15px;
+  margin-top: 20px; */
+  padding: 20px;
+  padding-left: 0px;
+  font-size: 75%;
 }
 
-.topics{
-    margin-bottom: 20px;
-    margin-left: 15px;
-    height: auto;
-    border-bottom: 1px solid rgb(107, 114, 110);
-    padding-bottom: 20px;
-    margin-right: 20px;
+.topics {
+  margin: 0px 15px 15px 20px;
+  height: auto;
+  border-bottom: 1px solid rgb(107, 114, 110);
+  padding-bottom: 20px;
 }
 
-.topics button{
-    font-family: 'Ubuntu', sans-serif;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 15px 10px 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: rgb(54, 68, 57);
-    outline: none;
-    
+.topics button {
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(54, 68, 57);
+  outline: none;
 }
-#topic-form{
-    margin-bottom: 20px;
-}
-
-.topics button:hover{
-    transform: scale(1.25);
-    box-shadow: 0px 2px 0px #00000041;
+#topic-form {
+  margin-bottom: 20px;
 }
 
-.button{
-    font-family: 'Ubuntu', sans-serif;
+.topics button:hover {
+  transform: scale(1.25);
+  box-shadow: 0px 2px 0px #00000041;
+}
+
+.button {
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: rgb(39, 49, 41);
+  padding: 10px 15px 10px 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(107, 114, 110);
+  outline: none;
+  font-weight: bold;
+}
+
+.download {
+    font-family: "Ubuntu", sans-serif;
     border: none;
     border-radius: 5px;
     color: rgb(39, 49, 41);
     padding: 10px 15px 10px 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 10px 0px 10px 0px;
     background-color: rgb(107, 114, 110);
     outline: none;
+    font-weight: bold;
+    float: right;
+  }
+
+.download:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 0px #00000041;
+  }
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 0px #00000041;
 }
 
-.button:hover{
-    transform: scale(1.10);
-    box-shadow: 0px 2px 0px #00000041;
+#search-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#topic-input {
+  margin: 10px 0px 10px 10px;
+}
+
+#topic-form {
+  margin-left: 20px;
 }
