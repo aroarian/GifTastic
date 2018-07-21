@@ -31,12 +31,15 @@
 
   $(document).on("click", ".topic-btn", getGifs);
 
-  $(".topic-btn").on("function", function(){
-    getGifs("10","0");
+  $(".topic-btn").on("click", function(){ 
+    var searchTerm = $(this).attr("data-name");
+    getGifs(0,10, searchTerm);
+    console.log(searchTerm);
   })
 
   $("#more-topic").on("click", function() {
-    getGifs(20,10, current);
+    var searchTerm = current[0]
+    getGifs(20,10, searchTerm);
   });
 
   $("#clear").on("click", function() {
@@ -122,16 +125,21 @@
     $("#topic-input").val("");
   });
 
-  function getGifs(start, end, searchTerm) {
+  function getGifs(start, end, term) {debugger;
     // current = [];
 
     // if (current === undefined || current.length == 0) return;
 
-    $(".gifs").empty();
+    // $(".gifs").empty();
+    var searchTerm;
+    if (term) {
+       searchTerm = term;
+    } else {
+      searchTerm = $(this).text();
+    }
+    
 
-    // var searchTerm = $(this).text();
-
-    var searchTerm = $(this).attr("data-name");
+   
 
     current.push(searchTerm);
 
@@ -174,6 +182,8 @@
   }
 
   function moreGifs() {
+
+    current = searchTerm
     
     getGifs(20,10,current);
 
