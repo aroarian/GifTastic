@@ -32,8 +32,8 @@ $( document ).ready(function() {
 
   $(document).on("click", ".topic-btn", function(){
     current = [];
-    start = 10;
-    end = 0;
+    start = "10";
+    end = "0";
     var searchTerm = $(this).attr("data-name");
     if (searchTerm !== current[0]){
       $(".gifs").empty();
@@ -43,8 +43,8 @@ $( document ).ready(function() {
 
   $("#more-topic").on("click", function() {
     if (current.length === 0 || current === undefined) return;    
-    start = 10;
-    end = 10;
+    start = "10";
+    end = "10";
     var searchTerm = current[0];
     getGifs(start,end,searchTerm);
   });
@@ -127,6 +127,7 @@ $( document ).ready(function() {
       method: "GET"
     }).then(function(response) {
       var results = response.data;
+      console.log(response);
 
       for (var i = 0; i < results.length; i++) {
         var topicDiv = $("<div class='gifDiv'></div>");
@@ -134,10 +135,9 @@ $( document ).ready(function() {
         var p = $("<p>").text("Rating: " + results[i].rating);
 
         var gifImage = $("<img>").addClass("gify");
-
-        var download = $("<button>")
-          .addClass("download")
-          .text("Download");
+        
+        var download = $("<a href=" + results[i].images.original.url +" download>" + "<button class='download'>Download</button></a>");
+          
 
         gifImage
           .attr("src", results[i].images.fixed_height_still.url)
