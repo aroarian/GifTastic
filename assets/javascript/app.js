@@ -136,7 +136,7 @@ $( document ).ready(function() {
 
         var gifImage = $("<img>").addClass("gify");
         
-        var download = $("<a href=" + results[i].images.original.url +" download>" + "<button class='download'>Download</button></a>");
+        var download = $("<a href=" + results[i].images.original.url +" download target='_blank'>" + "<button class='download'>Download</button></a>");
           
 
         gifImage
