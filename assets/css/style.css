@@ -4,6 +4,8 @@ body {
   font-weight: bold;
   font-size: 150%;
   font-family: "Ubuntu", sans-serif;
+  width: 100%;
+
 }
 
 body h1 {
@@ -14,6 +16,9 @@ body h1 {
     0px 8px 7px #001135;
   font-family: "Permanent Marker", cursive;
   margin-bottom:15px;
+  width: 50%;
+  margin-left: 20px;
+  
 }
 
 body input {
@@ -27,10 +32,14 @@ body input {
 }
 
 .header {
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
+  padding-right: 0px;
   height: auto;
+  width: 100%;
   background-color: rgb(54, 68, 57);
   margin-bottom: 20px;
+  float:left;
+  
 }
 .gifDiv {
   width: auto;
@@ -73,6 +82,7 @@ body input {
   margin-right: 5px;
   background-color: rgb(54, 68, 57);
   outline: none;
+  margin-bottom: 5px;
 }
 #topic-form {
   margin-bottom: 20px;
@@ -129,5 +139,10 @@ body input {
 }
 
 #topic-form {
+  margin-left: 20px;
+}
+
+#searchGif{
+  width: 300px;
   margin-left: 20px;
 }
