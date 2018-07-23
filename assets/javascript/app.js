@@ -1,14 +1,6 @@
 $( document ).ready(function() {
   
-  var topics = ["cats","dogs","funny","sad","music","beer",
-    "pugs",
-    "tired",
-    "confused",
-    "lost",
-    "hungry",
-    "full",
-    "hello"
-  ];
+  var topics = ["cats","dogs","funny","sad","music","beer","pugs","tired","confused","lost","hungry","full","hello"];
 
   var current=[];
 
@@ -18,10 +10,11 @@ $( document ).ready(function() {
     if (state === "still") {
       $(this).attr("src", $(this).attr("data-animate"));
       $(this).attr("data-state", "animate");
-    } else {
+    }
+    else {
       $(this).attr("src", $(this).attr("data-still"));
       $(this).attr("data-state", "still");
-    }
+    };
   });
 
   $(document).on("click", ".topic-btn", function(){
@@ -29,9 +22,10 @@ $( document ).ready(function() {
     start = "10";
     end = "0";
     var searchTerm = $(this).attr("data-name");
+
     if (searchTerm !== current[0]){
       $(".gifs").empty();
-    }
+    };
     getGifs(start,end,searchTerm);
   });
 
@@ -40,6 +34,7 @@ $( document ).ready(function() {
     start = "10";
     end = "10";
     var searchTerm = current[0];
+
     getGifs(start,end,searchTerm);
   });
 
@@ -98,27 +93,30 @@ $( document ).ready(function() {
       button.text(topics[i]);
 
       $(".favorites").append(button);
-    }
-  }
+    };
+  };
 
   
   function getGifs(start, end, term) {
- 
     var searchTerm;
+
     if (term) {
        searchTerm = term;
-    } else {
+    } 
+    else {
       searchTerm = $(this).text();
-    }
+    };
     
     current.push(searchTerm);
 
     var queryURL = 
-      `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=zmCZ9gyr4a3j3D4LKgskw7ykgskVAfRI&limit=${start}&offset=${end}&rating=pg`;
+      `https://api.giphy.com/v1/gifs/search?q=${searchTerm}
+      &api_key=zmCZ9gyr4a3j3D4LKgskw7ykgskVAfRI&limit=${start}&offset=${end}&rating=pg`;
 
     $.ajax({
       url: queryURL,
       method: "GET"
+
     }).then(function(response) {
       var results = response.data;
       console.log(response);
@@ -130,9 +128,9 @@ $( document ).ready(function() {
 
         var gifImage = $("<img>").addClass("gify");
         
-        var download = $("<a href=" + results[i].images.original.url +" download target='_blank'>" + "<button class='download'>Download</button></a>");
-          
-
+        var download = $("<a href=" + results[i].images.original.url +
+        "download target='_blank'>" + "<button class='download'>Download</button></a>");
+        
         gifImage
           .attr("src", results[i].images.fixed_height_still.url)
           .attr("data-animate", results[i].images.fixed_height.url)
@@ -144,9 +142,8 @@ $( document ).ready(function() {
         topicDiv.prepend(download);
 
         $(".gifs").prepend(topicDiv);
-      }
+      };
     });
-    
-  }
+  };
   generateButtons();
 });

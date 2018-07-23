@@ -38,6 +38,7 @@ input {
   margin-bottom: 20px;
   float: left;
 }
+
 .gifDiv {
   width: auto;
   min-width: 200px;
@@ -62,6 +63,7 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
+
 .favorites {
   margin: 0px 15px 15px 20px;
   height: auto;
@@ -81,6 +83,7 @@ input {
   outline: none;
   margin-bottom: 5px;
 }
+
 #topic-form {
   margin-bottom: 20px;
 }
@@ -151,7 +154,6 @@ input {
 
   .gifDiv {
     display: block;
-
   }
 
   h1 {
@@ -169,19 +171,19 @@ input {
     margin-bottom: 0px;
   }
 
-  #searchGif{
+  #searchGif {
     margin-left: 0px;
     margin-right: 0px;
     width: auto;
   }
 
-  #search-button{
+  #search-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #topic-form{
+  #topic-form {
     text-align: center;
     margin-left: 0px;
     font-size: 85%;
