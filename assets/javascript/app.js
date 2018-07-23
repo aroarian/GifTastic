@@ -1,12 +1,6 @@
 $( document ).ready(function() {
   
-  var topics = [
-    "cats",
-    "dogs",
-    "funny",
-    "sad",
-    "music",
-    "beer",
+  var topics = ["cats","dogs","funny","sad","music","beer",
     "pugs",
     "tired",
     "confused",
@@ -92,7 +86,7 @@ $( document ).ready(function() {
 
 
   function generateButtons() {
-    $(".topics").empty();
+    $(".favorites").empty();
 
     for (var i = 0; i < topics.length; i++) {
       var button = $("<button>");
@@ -103,7 +97,7 @@ $( document ).ready(function() {
 
       button.text(topics[i]);
 
-      $(".topics").append(button);
+      $(".favorites").append(button);
     }
   }
 
