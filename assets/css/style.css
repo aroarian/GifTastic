@@ -5,7 +5,6 @@ body {
   font-size: 150%;
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-
 }
 
 body h1 {
@@ -15,10 +14,9 @@ body h1 {
     0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
     0px 8px 7px #001135;
   font-family: "Permanent Marker", cursive;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   width: 50%;
   margin-left: 20px;
-  
 }
 
 body input {
@@ -38,8 +36,7 @@ body input {
   width: 100%;
   background-color: rgb(54, 68, 57);
   margin-bottom: 20px;
-  float:left;
-  
+  float: left;
 }
 .gifDiv {
   width: auto;
@@ -60,10 +57,10 @@ body input {
   font-size: 75%;
 }
 
-.gify{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.gify {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .topics {
   margin: 0px 15px 15px 20px;
@@ -107,22 +104,22 @@ body input {
 }
 
 .download {
-    font-family: "Ubuntu", sans-serif;
-    border: none;
-    border-radius: 5px;
-    color: rgb(39, 49, 41);
-    padding: 10px 15px 10px 15px;
-    margin: 10px 0px 10px 0px;
-    background-color: rgb(107, 114, 110);
-    outline: none;
-    font-weight: bold;
-    float: right;
-  }
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: rgb(39, 49, 41);
+  padding: 10px 15px 10px 15px;
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(107, 114, 110);
+  outline: none;
+  font-weight: bold;
+  float: right;
+}
 
 .download:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 2px 0px #00000041;
-  }
+  transform: scale(1.1);
+  box-shadow: 0px 2px 0px #00000041;
+}
 
 .button:hover {
   transform: scale(1.1);
@@ -142,7 +139,51 @@ body input {
   margin-left: 20px;
 }
 
-#searchGif{
+#searchGif {
   width: 300px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+  .gifDiv img {
+    max-width: 250px;
+  }
+
+  .gifDiv {
+    display: block;
+
+  }
+
+  body h1 {
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+
+  #search-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
+  #searchGif{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+  }
+
+  #search-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #topic-form{
+    text-align: center;
+    margin-left: 0px;
+    font-size: 85%;
+  }
 }
